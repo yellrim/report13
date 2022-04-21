@@ -26,9 +26,9 @@
             <div class="container">
                 <h2>· • ⸰ °&nbsp; P&nbsp; I &nbsp;N &nbsp;K &nbsp;F &nbsp;L &nbsp;O &nbsp;W &nbsp;E &nbsp;R &nbsp; ° ⸰ • ·</h2>
                 <div class="img-box">
-                    <img src="./img/pink01.jpg" alt="메인이미지1">
-                    <img src="./img/pink02.jpg" alt="메인이미지2">
-                    <img src="./img/pink03.jpg" alt="메인이미지3">
+                    <img onclick="popupOpen1()" src="./img/pink01.jpg" alt="메인이미지1">
+                    <img onclick="popupOpen2()" src="./img/pink02.jpg" alt="메인이미지2">
+                    <img onclick="popupOpen3()" src="./img/pink03.jpg" alt="메인이미지3">
                 </div>
             </div>
         </article>
@@ -37,5 +37,40 @@
             <h4>Lovesick / Pink spring</h4>
         </footer>
     </div>
+    <div class="popup" id="popup1">
+        <div class="popup-bg" onclick="popupClose()"></div>
+            <div class="popup-img1">
+                <img src="./img/pink01.jpg" alt="메인이미지1">
+            </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup-bg" onclick="popupClose()"></div>
+            <div class="popup-img2">
+                <img src="./img/pink02.jpg" alt="메인이미지1">
+            </div>
+    </div>
+    <div class="popup" id="popup3">
+        <div class="popup-bg" onclick="popupClose()"></div>
+            <div class="popup-img3">
+                <img src="./img/pink03.jpg" alt="메인이미지1">
+            </div>
+    </div>
+    <script>
+        function popupOpen1(){
+            document.getElementById('popup1').style.display='block';
+        }
+        function popupOpen2(){
+            document.getElementById('popup2').style.display='block';
+        }
+        function popupOpen3(){
+            document.getElementById('popup3').style.display='block';
+        }
+
+        function popupClose(){
+            document.getElementById('popup1').style.display='none';
+            document.getElementById('popup2').style.display='none';
+            document.getElementById('popup3').style.display='none';
+        }
+    </script>
 </body>
 </html>

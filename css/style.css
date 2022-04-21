@@ -23,22 +23,21 @@ h1{
 h2{
     text-align: center;
 }
+.main{
+    position: relative;
+}
 .img-box{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
-img{
-    /* width: 500PX; */
+.img-box img{
     margin: 30px;
     height: 670px;
     filter: grayscale(0.5);
     transition: 0.5s;
-}
-img:hover{
-    filter: grayscale(0);
-    transition: 0.3s;
+    cursor: pointer;
 }
 img:nth-child(2){
     margin-left: 0;
@@ -49,4 +48,24 @@ h3{
 }
 h4{
     text-align: center;
+}
+
+/* 팝업 */
+.popup{
+    width: 100%;
+    display: none;
+}
+.popup-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.popup-img1,.popup-img2,.popup-img3{
+    width: 500px;
+    position: absolute;
+    left: 37%;
+    top: 15%;
 }
